@@ -17,3 +17,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navActive {
+  color: #FFF;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav ul li {
+  padding: 5px;
+}
