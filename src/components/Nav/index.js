@@ -4,12 +4,12 @@ function Nav(props) {
     const { navLinks, currentPage, setCurrentPage } = props;
     return (
         <nav>
-            <ul>
+            <ul className='nav-links'>
                 {navLinks.map(link => (
                     <li>
                         <h2 
                         key={link}
-                        className={`${currentPage === link && 'navActive'}`} 
+                        className={`nav-link ${currentPage === link && 'navActive'}`} 
                         onClick={() => {
                             setCurrentPage(link)
                         }}>{link}</h2>
