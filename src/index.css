@@ -44,3 +44,51 @@ section {
   cursor: pointer;
   border-bottom: 3px solid #FFF;
 }
+
+.portfolio-container {
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: flex-end; 
+}
+
+.portfolio-img-container {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.portfolio-img-title {
+  text-transform: uppercase;
+  font-size: smaller;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.screen {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen:hover {
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 5px;
+}

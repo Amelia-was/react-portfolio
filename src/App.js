@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Work from './components/Work';
+//import Work from './components/Work';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
         case 'Work':
-          return <Work />;
+          return <Portfolio />;
         case 'Contact':
           return <Contact />;
         default:
