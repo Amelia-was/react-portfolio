@@ -3,8 +3,7 @@ import React from 'react';
 function About() {
     return (
         <section>
-            <h1>About</h1>
-            <p>I am so cool and nice</p>
+            <p>Amelia Wasowski is a carpenter and aspiring web developer from Toronto. She is currently studying coding at UofT Coding Boot Camp.</p>
         </section>
     );
 };
