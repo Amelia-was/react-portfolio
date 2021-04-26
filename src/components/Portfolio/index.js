@@ -4,70 +4,64 @@ import Project from '../Project';
 function Portfolio() {
     const [ apps ] = useState([
         {
-            name: 'Code Quiz',
-            readme: false,
-            altURL: false
+            name: 'Code Quiz'
         },
         {
-            name: 'Taskinator',
-            readme: false
+            name: 'Taskinator'
         },
         {
-            name: 'Taskmaster Pro',
-            readme: false
+            name: 'Taskmaster Pro'
         },
         {
-            name: 'Work Day Schedule',
-            readme: false
+            name: 'Work Day Schedule'
         },
         {
-            name: 'Weather Dashboard',
-            readme: false
+            name: 'Weather Dashboard'
         },
         {
             name: 'Tweet Tracks',
-            readme: true,
-            altURL: 'https://github.com/projone/tweet-tracks'
+            altURL: 'https://projone.github.io/tweet-tracks/',
+            altRepo: 'https://github.com/projone/tweet-tracks'
         },
         {
             name: 'ECommerce Back End',
-            readme: true
+            notDeployed: true
         },
         {
             name: 'ReadMe Generator',
-            readme: true
+            notDeployed: true
         },
         {
             name: 'Note Taker',
-            readme: true
+            altURL: 'https://polar-sea-04536.herokuapp.com/'
+
         },
         {
-            name: 'Team Profile Generator',
-            readme: true
+            name: 'Team Profile Generator'
         },
         {
             name: 'Tech Blog',
-            readme: true
+            altURL: 'https://sleepy-scrubland-82236.herokuapp.com/'
         },
         {
             name: 'Swatch',
-            readme: true,
-            altURL: 'https://github.com/Project-Two-Group-Nine/SWATCH'
+            altRepo: 'https://github.com/Project-Two-Group-Nine/SWATCH',
+            altURL: 'https://swatch-makeup-reviews.herokuapp.com/'
         },
         {
             name: 'Social Network API',
-            readme: true
+            notDeployed: true
         },
         {
             name: 'Budget Tracker',
-            readme: true
+            altURL: 'https://blooming-tor-59716.herokuapp.com/'
         }
     ])
 
     return (
         <section className='portfolio-container'>
             {apps.map((app, i) => 
-            <Project name={app.name} readme={app.readme} index={i} altURL={app.altURL} />
+            <Project name={app.name} index={i} altRepo={app.altRepo} altURL={app.altURL} notDeployed={app.notDeployed} />
             )}
         </section>
     );

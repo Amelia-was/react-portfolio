@@ -120,7 +120,7 @@ nav {
 .screen {
   position: absolute;
   background: rgba(42, 44, 57, 0.7);
-  z-index: 999;
+  z-index: 998;
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -129,11 +129,36 @@ nav {
   justify-content: center;
 }
 
-.screen:hover {
+.link-container {
+  z-index: 997;
+  background: rgba(42, 44, 57, 0.7);
+  padding: 5px;
+  position: absolute;
+  visibility: hidden;
+  border-radius: 0 0 0 5px;
+  bottom: 0;
+}
+
+.portfolio-img-container:hover > .link-container {
+  visibility: visible;
+  z-index: 1000;
+}
+
+.portfolio-img-container:hover > .screen {
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
+
+.portfolio-icon {
+  color: #FFF;
+}
+
+.portfolio-icon:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  opacity: 100%;
+}
+
 
 .portfolio-img {
   width: 300px;
@@ -211,4 +236,8 @@ button:hover {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
