@@ -39,8 +39,12 @@ function App() {
         <a href='https://github.com/amelia-was' className='icon-link' target='_blank'>
           <i class="fab fa-github"></i> 
         </a>
-        <i class="fab fa-linkedin-in"></i> 
-        <i class="fab fa-stack-overflow"></i>
+        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' className='icon-link' target='_blank'>
+          <i class="fab fa-linkedin-in"></i> 
+        </a>
+        <a href='https://app.codesignal.com/profile/amelia-was' className='icon-link' target='_blank'>
+          <i class="fas fa-code"></i>
+        </a>
       </footer>
     </main>
   );

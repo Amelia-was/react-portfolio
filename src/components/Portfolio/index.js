@@ -54,14 +54,15 @@ function Portfolio() {
         },
         {
             name: 'Budget Tracker',
-            altURL: 'https://blooming-tor-59716.herokuapp.com/'
+            altURL: 'https://blooming-tor-59716.herokuapp.com/',
+            featured: true
         }
     ])
 
     return (
         <section className='portfolio-container'>
             {apps.map((app, i) => 
-            <Project name={app.name} index={i} altRepo={app.altRepo} altURL={app.altURL} notDeployed={app.notDeployed} />
+            <Project name={app.name} index={i} altRepo={app.altRepo} altURL={app.altURL} notDeployed={app.notDeployed} featured={app.featured}/>
             )}
         </section>
     );

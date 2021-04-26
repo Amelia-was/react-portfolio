@@ -47,6 +47,25 @@ footer {
   z-index: 999;
 }
 
+h2 {
+  color: var(--accent2);
+}
+
+.about {
+  max-width: 80%;
+}
+
+.portfolio-photo {
+  height: 200px;
+  width: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about-text {
+  padding: 20px;
+}
+
 i {
   font-size: 150%;
   opacity: 60%;
@@ -137,6 +156,11 @@ nav {
   visibility: hidden;
   border-radius: 0 0 0 5px;
   bottom: 0;
+}
+
+.resume-link {
+  color: var(--accent2);
+
 }
 
 .portfolio-img-container:hover > .link-container {
