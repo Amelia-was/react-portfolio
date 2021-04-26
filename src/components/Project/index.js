@@ -5,11 +5,12 @@ function Project({ name, readme, altURL, index }) {
     return (
         <a 
         className='portfolio-img-container'
-            href={
-                altURL 
-                || (readme && `https://github.com/amelia-was/${toURL(name)}`) 
-                || `https://amelia-was.github.io/${toURL(name)}`
-            }>
+        target='_blank'
+        href={
+            altURL 
+            || (readme && `https://github.com/amelia-was/${toURL(name)}`) 
+            || `https://amelia-was.github.io/${toURL(name)}`
+        }>
             <div className='screen'>
                 <h3 className='portfolio-img-title'>{name}</h3>
             </div>

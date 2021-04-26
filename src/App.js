@@ -26,7 +26,7 @@ function App() {
   return (
     <main>
       <img 
-      src={require('./assets/imgs/amelia-logo.png').default} 
+      src={require('./assets/imgs/amelia-logo-animate.png').default} 
       className='logo'
       alt='Amelia Wasowski'/>
       <Nav 
@@ -36,7 +36,9 @@ function App() {
       />
       {renderPage()}
       <footer>
-        <i class="fab fa-github"></i> 
+        <a href='https://github.com/amelia-was' className='icon-link' target='_blank'>
+          <i class="fab fa-github"></i> 
+        </a>
         <i class="fab fa-linkedin-in"></i> 
         <i class="fab fa-stack-overflow"></i>
       </footer>
