@@ -59,14 +59,14 @@ function Contact() {
                         <a 
                         className='icon-link'
                         href='mailto:amelia.wasow@gmail.com'>
-                            <i class="fas fa-envelope"></i> amelia.wasow@gmail.com
+                            <i className="fas fa-envelope"></i> amelia.wasow@gmail.com
                         </a>
                     </p>
                     <p>
                         <a 
                         className='icon-link'
                         href='tel:647-462-5332'>
-                            <i class="fas fa-phone"></i> (647) 462 5332
+                            <i className="fas fa-phone"></i> (647) 462 5332
                         </a>
                 </p>
                 </div>

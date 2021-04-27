@@ -52,7 +52,7 @@ h2 {
 }
 
 .about {
-  max-width: 80%;
+  max-width: 400px;
 }
 
 .portfolio-photo {
@@ -105,6 +105,14 @@ nav {
   padding: 10px;
   margin: 0 10px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-link:first-child {
+  margin: 0 10px 0 0;
+}
+
+.nav-link:last-child {
+  margin: 0 0 0 10px;
 }
 
 .nav-link:hover {
@@ -264,4 +272,10 @@ button:hover {
 
 .justify-center {
   justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    padding: 0;
+  }
 }
