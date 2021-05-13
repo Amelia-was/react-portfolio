@@ -30,9 +30,6 @@ main {
   padding: 20px;
   margin: 0 auto;
   max-width: 1080px;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
 }
 
 footer {
@@ -40,9 +37,6 @@ footer {
   position: fixed;
   bottom: 0;
   height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   z-index: 999;
 }
@@ -66,13 +60,13 @@ h2 {
   padding: 20px;
 }
 
-i {
+.icon {
   font-size: 150%;
-  opacity: 60%;
+  opacity: 70%;
   margin: 10px;
 }
 
-i:hover {
+.icon:hover {
   opacity: 100%;
   transition: opacity 0.3s ease-in-out;
   cursor: pointer;
@@ -122,19 +116,28 @@ nav {
 }
 
 .portfolio-container {
-  display: flex;
-  flex-flow: row-reverse wrap-reverse;
-  justify-content: flex-end;
-  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 80px;
 }
 
 .portfolio-img-container {
   position: relative;
-  width: 300px;
-  height: 150px;
-  margin: 10px;
   border-radius: 5px;
   display: block;
+  max-height: 200px;
+}
+
+.featured {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  position: relative;
+  border-radius: 5px;
+  display: block;
+  min-height: 200px;
 }
 
 .portfolio-img-title {
@@ -151,14 +154,11 @@ nav {
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .link-container {
   z-index: 997;
-  background: rgba(42, 44, 57, 0.7);
+  background: rgba(42, 44, 57, 0.8);
   padding: 5px;
   position: absolute;
   visibility: hidden;
@@ -168,15 +168,14 @@ nav {
 
 .resume-link {
   color: var(--accent2);
-
 }
 
-.portfolio-img-container:hover > .link-container {
+.portfolio-img-container:hover > .link-container, .featured:hover > .link-container {
   visibility: visible;
   z-index: 1000;
 }
 
-.portfolio-img-container:hover > .screen {
+.portfolio-img-container:hover > .screen, .featured:hover > .screen {
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
@@ -191,10 +190,9 @@ nav {
   opacity: 100%;
 }
 
-
 .portfolio-img {
-  width: 300px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
   border-radius: 5px;
@@ -277,5 +275,12 @@ button:hover {
 @media only screen and (max-width: 375px) {
   main {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .featured {
+    grid-column: 1 / 2;
+    grid-row: auto;
   }
 }

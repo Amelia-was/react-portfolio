@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 
 function Resume() {
@@ -6,7 +7,7 @@ function Resume() {
         <section>
             <a 
             className='icon-link flex align-center resume-link'
-            href={require('../../assets/resume-2021.pdf').default}>Click to download my resume <i className='fas fa-external-link-alt'></i></a>
+                href={require('../../assets/resume-2021.pdf').default}>Click to download my resume <FaExternalLinkAlt className='icon' /></a>
         </section>
     );
 };

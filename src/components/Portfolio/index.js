@@ -4,44 +4,13 @@ import Project from '../Project';
 function Portfolio() {
     const [ apps ] = useState([
         {
-            name: 'Code Quiz'
+            name: 'Budget Tracker',
+            altURL: 'https://blooming-tor-59716.herokuapp.com/',
+            featured: true
         },
         {
-            name: 'Taskinator'
-        },
-        {
-            name: 'Taskmaster Pro'
-        },
-        {
-            name: 'Work Day Schedule'
-        },
-        {
-            name: 'Weather Dashboard'
-        },
-        {
-            name: 'Tweet Tracks',
-            altURL: 'https://projone.github.io/tweet-tracks/',
-            altRepo: 'https://github.com/projone/tweet-tracks'
-        },
-        {
-            name: 'ECommerce Back End',
+            name: 'Social Network API',
             notDeployed: true
-        },
-        {
-            name: 'ReadMe Generator',
-            notDeployed: true
-        },
-        {
-            name: 'Note Taker',
-            altURL: 'https://polar-sea-04536.herokuapp.com/'
-
-        },
-        {
-            name: 'Team Profile Generator'
-        },
-        {
-            name: 'Tech Blog',
-            altURL: 'https://sleepy-scrubland-82236.herokuapp.com/'
         },
         {
             name: 'Swatch',
@@ -49,20 +18,53 @@ function Portfolio() {
             altURL: 'https://swatch-makeup-reviews.herokuapp.com/'
         },
         {
-            name: 'Social Network API',
+            name: 'Tech Blog',
+            altURL: 'https://sleepy-scrubland-82236.herokuapp.com/'
+        },
+        {
+            name: 'Team Profile Generator'
+        },
+        {
+            name: 'Note Taker',
+            altURL: 'https://polar-sea-04536.herokuapp.com/'
+
+        },
+        {
+            name: 'ReadMe Generator',
             notDeployed: true
         },
         {
-            name: 'Budget Tracker',
-            altURL: 'https://blooming-tor-59716.herokuapp.com/',
-            featured: true
+            name: 'ECommerce Back End',
+            notDeployed: true
+        },
+        
+        {
+            name: 'Tweet Tracks',
+            altURL: 'https://projone.github.io/tweet-tracks/',
+            altRepo: 'https://github.com/projone/tweet-tracks'
+        },
+        {
+            name: 'Weather Dashboard'
+        },
+        {
+            name: 'Work Day Schedule'
+        },
+        {
+            name: 'Taskmaster Pro'
+        },
+        {
+            name: 'Taskinator'
+        },
+        
+        {
+            name: 'Code Quiz'
         }
     ])
 
     return (
-        <section className='portfolio-container'>
+        <section className='portfolio-container justify-center'>
             {apps.map((app, i) => 
-            <Project name={app.name} index={i} altRepo={app.altRepo} altURL={app.altURL} notDeployed={app.notDeployed} featured={app.featured}/>
+            <Project name={app.name} index={(apps.length - i - 1)} altRepo={app.altRepo} altURL={app.altURL} notDeployed={app.notDeployed} featured={app.featured}/>
             )}
         </section>
     );
