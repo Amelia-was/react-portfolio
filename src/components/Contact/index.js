@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { validateEmail } from '../../utils/helpers';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -31,46 +32,21 @@ function Contact() {
         console.log(formState);
     }
     return (
-        <section>
-            <h2>Interested in working with me? Get in touch!</h2>
-            <div className='flex align-center justify-between'>
-                <form id='contact-form' onSubmit={handleSubmit}>
-                    <div className='flex column justify-between'>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" name="name" onBlur={handleChange} defaultValue={name} />
-                    </div>
-                    <div className='flex column justify-between'>
-                        <label htmlFor="email">Email</label>
-                        <input type="email" name="email" onBlur={handleChange} defaultValue={email} />
-                    </div>
-                    <div className='flex column justify-between'>
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" rows="5" onBlur={handleChange} defaultValue={message} />
-                    </div>
-                        <div className='flex align-center'>
-                            <button type="submit">Submit</button>
-                            {errorMessage && (
-                                <p className="error-text">{errorMessage}</p>
-                            )}
-                        </div>
-                </form>
-                <div>
-                    <p>
-                        <a 
-                        className='icon-link'
-                        href='mailto:amelia.wasow@gmail.com'>
-                            <i className="fas fa-envelope"></i> amelia.wasow@gmail.com
-                        </a>
+        <section className='flex column'>
+            <p className='flex align-center'>
+                <a
+                    className='icon-link'
+                    href='mailto:amelia.wasow@gmail.com'>
+                    <FaEnvelope className='icon' /> </a>
+                            amelia.wasow@gmail.com
                     </p>
-                    <p>
-                        <a 
-                        className='icon-link'
-                        href='tel:647-462-5332'>
-                            <i className="fas fa-phone"></i> (647) 462 5332
-                        </a>
-                </p>
-                </div>
-            </div>
+            <p className='flex align-center'>
+                <a
+                    className='icon-link'
+                    href='tel:647-462-5332'>
+                    <FaPhone className='icon' /> </a>
+                            (647) 462 5332
+                    </p>
         </section>
     )
 };

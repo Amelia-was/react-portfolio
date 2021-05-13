@@ -1,10 +1,11 @@
 import React from 'react';
 import { toURL } from '../../utils/helpers';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-function Project({ name, altURL, altRepo, notDeployed, index }) {
+function Project({ name, altURL, altRepo, notDeployed, featured, index }) {
     return (
         
-        <div className='portfolio-img-container'>
+        <div className={(featured && `featured`) || `portfolio-img-container`}>
             
             <div className='screen flex justify-center align-center'>
                 <h3 className='portfolio-img-title'>{name}</h3>
@@ -14,14 +15,14 @@ function Project({ name, altURL, altRepo, notDeployed, index }) {
                     className='icon-link'
                     target='_blank'
                     href={altRepo || `https://github.com/amelia-was/${toURL(name)}`}>
-                    <i className='fab fa-github portfolio-icon'></i>
+                    <FaGithub className='icon portfolio-icon' />
                 </a>
                 {notDeployed ||
                     <a
                         className='icon-link'
                         target='_blank'
                         href={altURL || `https://amelia-was.github.io/${toURL(name)}`}>
-                        <i className='fas fa-external-link-alt portfolio-icon'></i>
+                        <FaExternalLinkAlt className='icon portfolio-icon' />
                     </a>
                 }
             </div>
