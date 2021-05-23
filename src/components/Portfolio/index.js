@@ -4,9 +4,14 @@ import Project from '../Project';
 function Portfolio() {
     const [ apps ] = useState([
         {
-            name: 'Budget Tracker',
-            altURL: 'https://blooming-tor-59716.herokuapp.com/',
+            name: 'BookEnd',
+            altURL: 'http://bookend-recommendations.herokuapp.com/',
+            altRepo: 'https://github.com/project3UOT/bookend',
             featured: true
+        },
+        {
+            name: 'Budget Tracker',
+            altURL: 'https://blooming-tor-59716.herokuapp.com/'
         },
         {
             name: 'Social Network API',

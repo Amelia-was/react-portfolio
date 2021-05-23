@@ -35,13 +35,19 @@ function App() {
       {renderPage()}
       <footer className='flex justify-center align-center'>
         <a href='https://github.com/amelia-was' className='icon-link' target='_blank'>
-          <FaGithub className='icon' /> 
+          <span className="material-icons icon">
+            folder
+          </span>
         </a>
-        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' className='icon-link' target='_blank'>
-          <FaLinkedinIn className='icon' /> 
+        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' classNameName='icon-link' target='_blank'>
+          <span className="material-icons icon">
+            contact_page
+          </span>
         </a>
         <a href='https://app.codesignal.com/profile/amelia-was' className='icon-link' target='_blank'>
-          <FaCode className='icon' />
+          <span className="material-icons icon">
+            computer
+          </span>
         </a>
       </footer>
     </main>

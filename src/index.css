@@ -61,9 +61,14 @@ h2 {
 }
 
 .icon {
-  font-size: 150%;
+  font-size: 200%;
+  color: #FFF;
   opacity: 70%;
   margin: 10px;
+}
+
+.icon span {
+  color: #FFF !important;
 }
 
 .icon:hover {
@@ -183,11 +188,14 @@ nav {
 
 .portfolio-icon {
   color: #FFF;
+  opacity: 70%;
+  padding: 10px;
 }
 
 .portfolio-icon:hover {
-  color: rgba(255, 255, 255, 1) !important;
+  color: #FFF;
   opacity: 100%;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .portfolio-img {
@@ -239,6 +247,11 @@ button:hover {
 }
 
 .icon-link {
+  color: #FFF;
+}
+
+.icon-link span {
+  font-size: 200%;
   text-decoration: none;
   color: inherit;
 }

@@ -37,14 +37,18 @@ function Contact() {
                 <a
                     className='icon-link'
                     href='mailto:amelia.wasow@gmail.com'>
-                    <FaEnvelope className='icon' /> </a>
+                    <span class="material-icons">
+                        email
+                    </span> </a>
                             amelia.wasow@gmail.com
                     </p>
             <p className='flex align-center'>
                 <a
                     className='icon-link'
                     href='tel:647-462-5332'>
-                    <FaPhone className='icon' /> </a>
+                    <span class="material-icons">
+                        phone
+                    </span> </a>
                             (647) 462 5332
                     </p>
         </section>

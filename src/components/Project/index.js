@@ -15,14 +15,18 @@ function Project({ name, altURL, altRepo, notDeployed, featured, index }) {
                     className='icon-link'
                     target='_blank'
                     href={altRepo || `https://github.com/amelia-was/${toURL(name)}`}>
-                    <FaGithub className='icon portfolio-icon' />
+                    <span class="material-icons portfolio-icon">
+                        code
+                    </span>
                 </a>
                 {notDeployed ||
                     <a
                         className='icon-link'
                         target='_blank'
                         href={altURL || `https://amelia-was.github.io/${toURL(name)}`}>
-                        <FaExternalLinkAlt className='icon portfolio-icon' />
+                    <span class="material-icons portfolio-icon">
+                        insert_link
+</span>
                     </a>
                 }
             </div>
