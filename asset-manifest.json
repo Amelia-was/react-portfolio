@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.f4857377.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.f093502d.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.f093502d.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.31bc8c22.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.31bc8c22.js.map",
-    "static/js/2.7aa47b33.chunk.js": "/react-portfolio/static/js/2.7aa47b33.chunk.js",
-    "static/js/2.7aa47b33.chunk.js.map": "/react-portfolio/static/js/2.7aa47b33.chunk.js.map",
-    "static/js/3.46f63625.chunk.js": "/react-portfolio/static/js/3.46f63625.chunk.js",
-    "static/js/3.46f63625.chunk.js.map": "/react-portfolio/static/js/3.46f63625.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.73b935dc.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.c6f808e4.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.c6f808e4.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.89700c05.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.89700c05.js.map",
+    "static/js/2.4df66f59.chunk.js": "/react-portfolio/static/js/2.4df66f59.chunk.js",
+    "static/js/2.4df66f59.chunk.js.map": "/react-portfolio/static/js/2.4df66f59.chunk.js.map",
+    "static/js/3.6d37693c.chunk.js": "/react-portfolio/static/js/3.6d37693c.chunk.js",
+    "static/js/3.6d37693c.chunk.js.map": "/react-portfolio/static/js/3.6d37693c.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.f4857377.chunk.css.map": "/react-portfolio/static/css/main.f4857377.chunk.css.map",
-    "static/js/2.7aa47b33.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.7aa47b33.chunk.js.LICENSE.txt",
+    "static/css/main.73b935dc.chunk.css.map": "/react-portfolio/static/css/main.73b935dc.chunk.css.map",
+    "static/js/2.4df66f59.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.4df66f59.chunk.js.LICENSE.txt",
     "static/media/amelia-logo-animate.png": "/react-portfolio/static/media/amelia-logo-animate.9987336f.png",
     "static/media/app-0.png": "/react-portfolio/static/media/app-0.b7937647.png",
     "static/media/app-1.png": "/react-portfolio/static/media/app-1.1330025f.png",
@@ -19,6 +19,7 @@
     "static/media/app-11.png": "/react-portfolio/static/media/app-11.b4217c0f.png",
     "static/media/app-12.png": "/react-portfolio/static/media/app-12.a450e017.png",
     "static/media/app-13.png": "/react-portfolio/static/media/app-13.fbee75a2.png",
+    "static/media/app-14.png": "/react-portfolio/static/media/app-14.0bdfc75a.png",
     "static/media/app-2.png": "/react-portfolio/static/media/app-2.b67e14f9.png",
     "static/media/app-3.png": "/react-portfolio/static/media/app-3.182376d6.png",
     "static/media/app-4.png": "/react-portfolio/static/media/app-4.2f85761e.png",
@@ -27,13 +28,12 @@
     "static/media/app-7.png": "/react-portfolio/static/media/app-7.c1e72d2e.png",
     "static/media/app-8.png": "/react-portfolio/static/media/app-8.2a69057a.png",
     "static/media/app-9.png": "/react-portfolio/static/media/app-9.acbe5be9.png",
-    "static/media/portfolio-photo.JPG": "/react-portfolio/static/media/portfolio-photo.d57835b6.JPG",
-    "static/media/resume-2021.pdf": "/react-portfolio/static/media/resume-2021.a8098f58.pdf"
+    "static/media/portfolio-photo.JPG": "/react-portfolio/static/media/portfolio-photo.d57835b6.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.31bc8c22.js",
-    "static/js/2.7aa47b33.chunk.js",
-    "static/css/main.f4857377.chunk.css",
-    "static/js/main.f093502d.chunk.js"
+    "static/js/runtime-main.89700c05.js",
+    "static/js/2.4df66f59.chunk.js",
+    "static/css/main.73b935dc.chunk.css",
+    "static/js/main.c6f808e4.chunk.js"
   ]
 }
