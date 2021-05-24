@@ -6,9 +6,8 @@ function Nav(props) {
         <nav>
             <ul className='nav-links'>
                 {navLinks.map(link => (
-                    <li>
+                    <li key={link}>
                         <h2 
-                        key={link}
                         className={`nav-link ${currentPage === link && 'navActive'}`} 
                         onClick={() => {
                             setCurrentPage(link)

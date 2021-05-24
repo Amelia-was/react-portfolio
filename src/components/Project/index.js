@@ -1,6 +1,5 @@
 import React from 'react';
 import { toURL } from '../../utils/helpers';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Project({ name, altURL, altRepo, notDeployed, featured, index }) {
     return (
@@ -12,8 +11,9 @@ function Project({ name, altURL, altRepo, notDeployed, featured, index }) {
             </div>
             <div className='link-container flex justify-center align-center'>
                 <a
-                    className='portoflio-link'
+                    className='portfolio-link'
                     target='_blank'
+                    rel='noreferrer'
                     href={altRepo || `https://github.com/amelia-was/${toURL(name)}`}>
                     github
                 </a>
@@ -21,6 +21,7 @@ function Project({ name, altURL, altRepo, notDeployed, featured, index }) {
                     <a
                         className='portfolio-link'
                         target='_blank'
+                        rel='noreferrer'
                         href={altURL || `https://amelia-was.github.io/${toURL(name)}`}>
                     link 
                     </a>

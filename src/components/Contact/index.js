@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { validateEmail } from '../../utils/helpers';
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });

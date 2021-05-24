@@ -4,8 +4,6 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
-import { FaGithub, FaLinkedinIn, FaCode } from "react-icons/fa";
-
 function App() {
   const navLinks = ['About', 'Work', 'Contact' ];
   const [ currentPage, setCurrentPage ] = useState(navLinks[0]);
@@ -34,13 +32,13 @@ function App() {
       />
       {renderPage()}
       <footer className='flex justify-center align-center'>
-        <a href='https://github.com/amelia-was' className='footer-link' target='_blank'>
+        <a href='https://github.com/amelia-was' className='footer-link' target='_blank' rel='noreferrer'>
           github
         </a>
-        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' classNameName='footer-link' target='_blank'>
+        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' className='footer-link' target='_blank' rel='noreferrer'>
           linkedin
         </a>
-        <a href='https://app.codesignal.com/profile/amelia-was' className='footer-link' target='_blank'>
+        <a href='https://app.codesignal.com/profile/amelia-was' className='footer-link' target='_blank' rel='noreferrer'>
           code signal
         </a>
       </footer>

@@ -291,7 +291,7 @@ button:hover {
 }
 
 .footer-link:visited {
-  color: var(--text);
+  color: var(--text) !important;
   font-weight: bold;
   text-decoration: none;
 }
