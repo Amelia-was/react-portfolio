@@ -34,20 +34,14 @@ function App() {
       />
       {renderPage()}
       <footer className='flex justify-center align-center'>
-        <a href='https://github.com/amelia-was' className='icon-link' target='_blank'>
-          <span className="material-icons icon">
-            folder
-          </span>
+        <a href='https://github.com/amelia-was' className='footer-link' target='_blank'>
+          github
         </a>
-        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' classNameName='icon-link' target='_blank'>
-          <span className="material-icons icon">
-            contact_page
-          </span>
+        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' classNameName='footer-link' target='_blank'>
+          linkedin
         </a>
-        <a href='https://app.codesignal.com/profile/amelia-was' className='icon-link' target='_blank'>
-          <span className="material-icons icon">
-            computer
-          </span>
+        <a href='https://app.codesignal.com/profile/amelia-was' className='footer-link' target='_blank'>
+          code signal
         </a>
       </footer>
     </main>

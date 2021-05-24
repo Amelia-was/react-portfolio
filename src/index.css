@@ -248,9 +248,16 @@ button:hover {
 
 .icon-link {
   color: #FFF;
+  opacity: 70%;
+}
+
+.icon-link:hover {
+  opacity: 100%;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .icon-link span {
+  padding: 10px;
   font-size: 200%;
   text-decoration: none;
   color: inherit;
@@ -258,6 +265,24 @@ button:hover {
 
 .icon-link:visited {
   color: inherit;
+}
+
+.footer-link {
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.footer-link:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.footer-link:visited {
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* utility classes */

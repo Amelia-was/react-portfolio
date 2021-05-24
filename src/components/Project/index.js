@@ -12,19 +12,19 @@ function Project({ name, altURL, altRepo, notDeployed, featured, index }) {
             </div>
             <div className='link-container flex justify-center align-center'>
                 <a
-                    className='icon-link'
+                    className='icon-link portoflio-link'
                     target='_blank'
                     href={altRepo || `https://github.com/amelia-was/${toURL(name)}`}>
-                    <span class="material-icons portfolio-icon">
+                    <span class="material-icons">
                         code
                     </span>
                 </a>
                 {notDeployed ||
                     <a
-                        className='icon-link'
+                        className='icon-link portfolio-link'
                         target='_blank'
                         href={altURL || `https://amelia-was.github.io/${toURL(name)}`}>
-                    <span class="material-icons portfolio-icon">
+                    <span class="material-icons">
                         insert_link
 </span>
                     </a>
