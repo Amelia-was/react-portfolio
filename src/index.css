@@ -186,16 +186,27 @@ nav {
   transition: opacity 0.3s ease-in-out;
 }
 
-.portfolio-icon {
+.portfolio-link {
   color: #FFF;
   opacity: 70%;
+  font-weight: bold;
+  text-decoration: none;
   padding: 10px;
 }
 
-.portfolio-icon:hover {
+.portfolio-link:hover {
   color: #FFF;
   opacity: 100%;
+  text-decoration: none;
   transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-link:visited, .portfolio-link:active, .portfolio-link:link  {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .portfolio-img {
