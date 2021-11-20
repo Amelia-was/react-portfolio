@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { validateEmail } from '../../utils/helpers';
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaLinkedinIn } from 'react-icons/fa';
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -33,6 +33,13 @@ function Contact() {
     }
     return (
         <section className='flex column'>
+            <p className='flex align-center'>
+
+            <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' className='icon-link' target='_blank'>
+                <FaLinkedinIn className='icon' />
+            </a>
+                LinkedIn
+            </p>
             <p className='flex align-center'>
                 <a
                     className='icon-link'
