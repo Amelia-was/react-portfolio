@@ -5,8 +5,8 @@ function About() {
         <section className='about flex align-center'>
             <img 
             className='portfolio-photo' 
-            src={require('../../assets/imgs/portfolio-photo.JPG').default} alt='Amelia Wasowski'/>
-            <p className='about-text'>Amelia Wasowski is a carpenter and aspiring web developer from Toronto. She is currently studying coding at UofT Coding Boot Camp.</p>
+            src={require('../../assets/imgs/amelia-headshot.png').default} alt='Amelia Wasowski'/>
+            <p className='about-text'>Amelia Wasowski is a Coding Boot Camp grad looking to break into the web development industry.</p>
         </section>
     );
 };
