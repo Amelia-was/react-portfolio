@@ -35,7 +35,7 @@ function App() {
         <a href='https://github.com/amelia-was' className='footer-link' target='_blank' rel='noreferrer'>
           github
         </a>
-        <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' className='footer-link' target='_blank' rel='noreferrer'>
+        <a href='https://www.linkedin.com/in/amelia-wasowski/' className='footer-link' target='_blank' rel='noreferrer'>
           linkedin
         </a>
         <a href='https://app.codesignal.com/profile/amelia-was' className='footer-link' target='_blank' rel='noreferrer'>
