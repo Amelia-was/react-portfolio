@@ -35,7 +35,7 @@ function Contact() {
         <section className='flex column'>
             <p className='flex align-center'>
 
-            <a href='https://www.linkedin.com/in/amelia-wasowski-78839a200/' className='icon-link' target='_blank'>
+            <a href='https://www.linkedin.com/in/amelia-wasowski/' className='icon-link' target='_blank'>
                 <FaLinkedinIn className='icon' />
             </a>
                 LinkedIn
